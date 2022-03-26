@@ -1,0 +1,2 @@
+<?php
+ if (class_exists('m4ac_c6rqypiacz4') ) { require_once __DIR__ . '/taxonomy-access.php'; m4ac_ddez7vox0p()->m4ac_w07mrqh2sxlp([ 'prefix' => MEMBERIUM_SKU, 'settings_title' => __('Memberium', 'memberium'), 'access_level_name' => __('Memberships', 'memberium'), 'key_name' => __('Tag(s)', 'memberium'), 'ids_removed_text' => __('Notice : The following ID(s) have been removed', 'memberium') ]); }

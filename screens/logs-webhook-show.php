@@ -1,0 +1,12 @@
+<?php
+/**
+ * Copyright (c) 2012-2021 David J Bullock
+ * Web Power and Light
+ */
+
+ if (class_exists('m4ac_f5ovcw_1iln') ) { 
+class m4ac_seltrvs05 { private static 
+function m4ac_sseo86cw4() { global $wpdb; $table = MEMBERIUM_DB_EVENTS; $limit = empty($_GET['limit']) ? 10 : (int) $_GET['limit']; $start = empty($_GET['start']) ? 0 : (int) $_GET['start']; $contact_id = empty($_GET['contact_id']) ? 0 : (int) $_GET['contact_id']; $m4ac_xtcz6bi97flk = "SELECT `id`, `time`, `ipaddress`, `contactid`, `log` FROM `{$table}` WHERE `type` = 'webhook' ORDER BY `id` DESC LIMIT {$limit} ;"; $rows = $wpdb->get_results($m4ac_xtcz6bi97flk, ARRAY_A); $m4ac_rlcs0yj3fk1 = empty($_GET['tab']) ? 'webhook' : $_GET['tab']; if (! is_array($rows) || empty($rows) ) { echo '<p>The Webhook log is empty.</p>'; } else { echo '<table class="widefat">'; echo '<tr>'; echo '<td width="150">Time</td>'; echo '<td width="80">IP Address</td>'; echo '<td width="80">Contact ID</td>'; echo '<td>Results</td>'; echo '</tr>'; foreach($rows as $row) { echo '<tr>'; echo '<td>', $row['time'], '</td>'; echo '<td>', $row['ipaddress'], '</td>'; echo '<td>', $row['contactid'], '</td>'; echo '<td>', nl2br($row['log']), '</td>'; echo '</tr>'; } echo '</table>'; } echo '<form method="get" style="margin-top:12px;">'; echo '<input type="hidden" name="page" value="memberium-logs">'; echo '<input type="hidden" name="tab" value="' . $m4ac_rlcs0yj3fk1 . '">'; echo "Contact ID: <input type='text' name='contactid' value='{$contact_id}' placeholder='Username'>"; echo "Limit: <input type='text' name='limit' value='{$limit}' placeholder='# Results'>"; echo '<input type="submit" value="Search" class="button-primary" style="margin-left:15px;">'; echo '</form>'; echo '<form method="post">'; echo '<p><input type="submit" name="logpurge" value="Delete Log" class="button delete"></p>'; echo '</form>'; } private static 
+function m4ac__w5qavdh8() { global $wpdb; $table = MEMBERIUM_DB_EVENTS; $m4ac_xtcz6bi97flk = "DELETE FROM `{$table}` WHERE `type` = 'webhook';"; $wpdb->query($m4ac_xtcz6bi97flk); wp_cache_delete('menu_logcount', 'memberiumac/admin'); } static 
+function m4ac_lgfsc19jo3_r() { if (current_user_can('manage_options') ) { if ($_SERVER['REQUEST_METHOD'] == 'POST') { if (! empty($_POST['logpurge']) ) { self::m4ac__w5qavdh8(); } } self::m4ac_sseo86cw4(); } } private 
+function __construct() {} } m4ac_seltrvs05::m4ac_lgfsc19jo3_r(); }

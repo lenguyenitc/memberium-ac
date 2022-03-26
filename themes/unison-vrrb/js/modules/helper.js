@@ -1,0 +1,1 @@
+!function(n,i,t){"use strict";n.helper=function(){function n(){return this.init=function(){return this},this.init()}return new n}()}(window.PROJECTNAME=window.PROJECTNAME||{},jQuery);

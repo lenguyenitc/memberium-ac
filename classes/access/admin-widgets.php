@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright (c) 2017-2021 David J Bullock
+ * Web Power and Light, LLC
+ * https://webpowerandlight.com
+ * support@webpowerandlight.com
+ *
+ */
+
+ if (class_exists('m4ac_c6rqypiacz4') ) { final 
+class m4ac_t3mcyjgw8 {  static 
+function m4ac_xnelf0xw593($m4ac_n_2w8gtz, $m4ac_vo6741wvgc, $m4ac_u4tpxcro19) { $m4ac_u9uhl_ci87 = self::m4ac_c4lpamw7qx1n(); foreach ($m4ac_u9uhl_ci87 as $m4ac_yqah5jzkgcdf => $m4ac_wc9s2dnt4y){ $m4ac_u9uhl_ci87[$m4ac_yqah5jzkgcdf]['id'] = $m4ac_n_2w8gtz->get_field_id($m4ac_wc9s2dnt4y['name']); $m4ac_u9uhl_ci87[$m4ac_yqah5jzkgcdf]['field_name'] = $m4ac_n_2w8gtz->get_field_name($m4ac_wc9s2dnt4y['name']); $m4ac_u9uhl_ci87[$m4ac_yqah5jzkgcdf]['value'] = isset($m4ac_u4tpxcro19[$m4ac_wc9s2dnt4y['name']]) ? $m4ac_u4tpxcro19[$m4ac_wc9s2dnt4y['name']] : ''; } $m4ac_n5dw3y7vlku = 'wpal-widget-access'; $m4ac_o4pf036oac = $m4ac_n_2w8gtz->id; $m4ac_vbfqaohp_ = 'widget'; $m4ac_x_1654tdgb = isset($m4ac_u4tpxcro19['status']) ? $m4ac_u4tpxcro19['status'] : ''; $m4ac_yl1eaywt765 = m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_ti4mso7bq(); include m4ac_c6rqypiacz4::m4ac_zglmin6r8y4('core-wp-asset-access-meta.php'); return; } static 
+function m4ac_zxbqa9tg1( $m4ac_u4tpxcro19, $m4ac_flq1rv8wf0t ){ $m4ac_u9uhl_ci87 = self::m4ac_c4lpamw7qx1n(); if( is_array($m4ac_u9uhl_ci87) && ! empty($m4ac_u9uhl_ci87) ){ $m4ac_x_1654tdgb = 0;  foreach ($m4ac_u9uhl_ci87 as $m4ac_wc9s2dnt4y) { $m4ac_pzocy3nw = $m4ac_wc9s2dnt4y['name']; $m4ac_ihnr7cyv = ''; if( isset($m4ac_flq1rv8wf0t[$m4ac_pzocy3nw]) ){ $m4ac_ss6bwxopg8 = $m4ac_wc9s2dnt4y['type']; $m4ac_ihnr7cyv = $m4ac_flq1rv8wf0t[$m4ac_pzocy3nw];  if( $m4ac_ss6bwxopg8 === 'select2' && !empty($m4ac_ihnr7cyv) ){ $m4ac_ihnr7cyv = trim($m4ac_ihnr7cyv, ',');  if( $m4ac_pzocy3nw === 'memberships' && !empty($m4ac_ihnr7cyv) ){ $m4ac_mi0uh7e29 = m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_xehawo4dq($m4ac_ihnr7cyv); $m4ac_ihnr7cyv = $m4ac_mi0uh7e29 ? $m4ac_mi0uh7e29 : $m4ac_ihnr7cyv; $m4ac_u4tpxcro19['any_membership'] = $m4ac_mi0uh7e29 ? 1 : 0; } } if( $m4ac_pzocy3nw === 'status' ){ $m4ac_x_1654tdgb = (int)$m4ac_ihnr7cyv; } $m4ac_u4tpxcro19[$m4ac_pzocy3nw] = $m4ac_ihnr7cyv; } }  if( $m4ac_x_1654tdgb === 1 ){ $m4ac_u4tpxcro19['logged_in_only'] = 1; $m4ac_u4tpxcro19['logged_out_only'] = 0; }  else if( $m4ac_x_1654tdgb === 2 ){ $m4ac_u4tpxcro19['logged_in_only'] = 0; $m4ac_u4tpxcro19['logged_out_only'] = 1; $m4ac_u4tpxcro19 = m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_ts0uy6vbi_o($m4ac_u4tpxcro19); }  else{ $m4ac_u4tpxcro19['logged_in_only'] = 0; $m4ac_u4tpxcro19['logged_out_only'] = 0; $m4ac_u4tpxcro19 = m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_ts0uy6vbi_o($m4ac_u4tpxcro19); } } return $m4ac_u4tpxcro19; } static 
+function m4ac_s6a1djgm(){ static $m4ac_o9lbtwmgq4r = false; if ($m4ac_o9lbtwmgq4r){ return; } m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_vq95yl34ed1b('widget'); $m4ac_o9lbtwmgq4r = true; }  static 
+function m4ac_c4lpamw7qx1n(){ static $m4ac_skln9xohu50 = false; if( $m4ac_skln9xohu50 ){ return $m4ac_skln9xohu50; } $m4ac_skln9xohu50 = m4ac_bslvmz6poqi3::m4ac_zw_dhmca()->m4ac_i3894xng('widget'); return apply_filters( 'memberium/widget/fields', $m4ac_skln9xohu50 ); } } }

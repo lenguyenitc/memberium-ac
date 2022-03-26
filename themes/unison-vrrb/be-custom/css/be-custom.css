@@ -1,0 +1,25 @@
+.be-unison-reactivate-template{
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+.be-unison-reactivate-template .error-message{
+  color: #fff;
+}
+/* Custom page order detail */
+/* .order_details .product-name .wcs-switch-link{
+  display: none;
+} */
+#wfacp-e-form .wfacp_main_form.woocommerce table.shop_table.woocommerce-checkout-review-order-table .recurring-total td{
+  color: #666 !important;
+}
+.media .media-body .row{
+  margin-bottom: 15px !important;
+}
+@media (min-width:981px) {
+    #add_payment_method .woocommerce-Button {
+        left: 50% !important;
+        margin-top: -70px;
+        transform: translate(-50%);
+    }
+}

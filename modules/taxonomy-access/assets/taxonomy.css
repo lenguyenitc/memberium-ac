@@ -1,0 +1,71 @@
+.wpal-taxonomy-access-tbody{
+    border-radius: 0.25em;
+    box-shadow: 0 0 0 1px;
+}
+
+.wpal-taxonomy-access-tbody th h3{
+    margin: 0;
+}
+
+.wpal-taxonomy-access-tbody th{
+    padding-left:7px;
+}
+
+.wpal-taxonomy-access-field-label{
+    display: block;
+}
+
+.wpal-taxonomy-access-field-control .select2-container{
+    width:100%!important;
+    line-height: 24px!important;
+}
+
+.wpal-taxonomy-access-tbody .wpal-taxonomy-access-notice{
+    font-size: 12px;
+    display: block;
+    background: #f00;
+    padding: 1em;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.wpal-taxonomy-access-tbody[data-prohibited-action] [data-setting="redirect_url"]{
+    display: none;
+    visibility: hidden;
+}
+
+.wpal-taxonomy-access-tbody[data-prohibited-action="1"] [data-setting="redirect_url"]{
+    display: table-row;
+    visibility: visible;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    display: block;
+    width: calc(100% - 14px);
+    white-space: normal;
+}
+
+.wpal-tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.wpal-tooltip .wpal-tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px 14px;
+    line-height: 1.6;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.wpal-tooltip:hover .wpal-tooltiptext {
+  visibility: visible;
+}

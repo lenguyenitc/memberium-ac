@@ -1,0 +1,13 @@
+<?php
+/**
+ * Copyright (c) 2020 David J Bullock
+ * Web Power and Light, LLC
+ * https://webpowerandlight.com
+ * support@webpowerandlight.com
+ *
+ */
+
+ if (class_exists('m4ac_c6rqypiacz4') ) { final 
+class m4ac__g1kb3_xi8ov { private 
+function __construct() {} static 
+function m4ac_qb4j8rqewy7h($m4ac_khf1bo_95) { if (memberium_app()->m4ac_k6b8c0f7g5() ) { $m4ac_xiacz8bpdx = [ [ 'id' => 'wpal-memberium-new-membership', 'title' => 'Memberium Membership', 'parent' => 'new-content', 'href' => get_admin_url() . 'admin.php?page=memberium-memberships&action=add', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-partial', 'title' => 'Partial', 'parent' => 'new-content', 'href' => get_admin_url() . 'post-new.php?post_type=partials', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-customshortcode', 'title' => 'Custom Shortcode', 'parent' => 'new-content', 'href' => get_admin_url() . 'post-new.php?post_type=memb_shortcodeblocks', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium', 'title' => 'Memberium', 'parent' => '', 'href' => '', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-sync-tags', 'title' => 'Sync Tags', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=dashboard&action=sync-tags', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-sync-fields', 'title' => 'Sync Custom Fields', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=dashboard&action=sync-fields', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-sync-lists', 'title' => 'Sync Lists', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=dashboard&action=sync-lists', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-sync-automations', 'title' => 'Sync Automations', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=dashboard&action=sync-automations', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-license', 'title' => 'Update License', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-ac&tab=license&action=update', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-dashboard', 'title' => 'Dashboard', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=dashboard', 'group' => '', 'meta' => [], ], [ 'id' => 'wpal-memberium-support', 'title' => 'Support', 'parent' => 'wpal-memberium', 'href' => get_admin_url() . 'admin.php?page=memberium-support&tab=support', 'group' => '', 'meta' => [], ], ]; foreach($m4ac_xiacz8bpdx as $m4ac_ww7oiazfdu) { $m4ac_khf1bo_95->add_node($m4ac_ww7oiazfdu); } } } } }

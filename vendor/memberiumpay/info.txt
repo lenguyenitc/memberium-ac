@@ -1,0 +1,10 @@
+<?php
+/*
+Plugin Name: MemberiumPay (<strong style="color:red;">Beta Version</strong>)
+Author URI: 0000
+Version: 1.0.11
+Plugin URI: https://webpowerandlight.com/
+Description: eCommerce Module for Memberium
+Author: Web, Power and Light
+Copyright: 2019-2020 Web, Power and Light
+*/

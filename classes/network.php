@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright (c) 2018-2021 David J Bullock
+ * Web Power and Light
+ */
+
+ if (class_exists('m4ac_c6rqypiacz4') ) { final 
+class m4ac_p58mfx3cua { static 
+function m4ac_teq1zlwih6() { static $m4ac_hfo36s58mq = NULL; if (! empty( $m4ac_hfo36s58mq ) ) { return $m4ac_hfo36s58mq; } $m4ac_hfo36s58mq = $_SERVER['REMOTE_ADDR']; $m4ac_kid4yn2etg = [ 'HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'HTTP_X_SUCURI_CLIENTIP', 'HTTP_X_REAL_IP', ]; foreach ( $m4ac_kid4yn2etg as $m4ac_ukqvxo6ne7 ) { if ( array_key_exists( $m4ac_ukqvxo6ne7, $_SERVER ) === true) { foreach ( explode( ',', $_SERVER[$m4ac_ukqvxo6ne7] ) as $m4ac_cmcz9j7gu4 ) { $m4ac_cmcz9j7gu4 = trim( $m4ac_cmcz9j7gu4 ); if ( self::m4ac_ien1h_ktd( $m4ac_cmcz9j7gu4 ) ) { $m4ac_hfo36s58mq = $m4ac_cmcz9j7gu4; } } } } return $m4ac_hfo36s58mq; } private static 
+function m4ac_ien1h_ktd( string $m4ac_cmcz9j7gu4 ) { if ( filter_var( $m4ac_cmcz9j7gu4, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE ) === false ) { return false; } return true; } static 
+function m4ac_lqpst7nuobg1( string $m4ac_atr94xdeg3 = '', $m4ac_mwj5zkgrs = false, $m4ac_ah90o86m = null ) { $m4ac_wdl2r3x6jg = [ 'timeout' => 3, ]; $m4ac_ah90o86m = wp_parse_args( $m4ac_ah90o86m, $m4ac_wdl2r3x6jg ); $m4ac_fmp1cur9 = wp_remote_get( $m4ac_atr94xdeg3, $m4ac_ah90o86m ); if ( ! is_a( $m4ac_fmp1cur9, 'WP_error' ) ) { if (is_array( $m4ac_fmp1cur9 ) ) { if (empty( $m4ac_fmp1cur9['body'] ) ) { $m4ac_fmp1cur9['body'] = ''; } return $m4ac_mwj5zkgrs ? $m4ac_fmp1cur9 : $m4ac_fmp1cur9['body']; } } return false; } static 
+function m4ac_qqumg4zdrl68( string $m4ac_cmcz9j7gu4, string $m4ac_hf7z1vyudc ) { list( $m4ac_lmqjkda9o, $m4ac_jd7lyzifgwe ) = explode( '/', $m4ac_hf7z1vyudc ); if ( ( ip2long( $m4ac_cmcz9j7gu4 ) & ~( ( 1 << ( 32 - $m4ac_jd7lyzifgwe ) ) - 1 ) ) == ip2long( $m4ac_lmqjkda9o ) ) { return true; } return false; } static 
+function m4ac_h3thn_l7g() { $m4ac_pd1l90x4g_ = self::m4ac_kkt2s8yh6n(); $m4ac_os_febglr685 = []; foreach( $m4ac_pd1l90x4g_ as $m4ac_lmqjkda9o ) { if ( 'S3' == $m4ac_lmqjkda9o->service ) { $m4ac_os_febglr685[$m4ac_lmqjkda9o->region] = $m4ac_lmqjkda9o->region; } } ksort($m4ac_os_febglr685); return $m4ac_os_febglr685; } static 
+function m4ac_kkt2s8yh6n() { $m4ac_n2xb45kfup = 'Amazon_AWS_Subnets'; $m4ac_pd1l90x4g_ = false;  if ( $m4ac_pd1l90x4g_ === false ) { $m4ac_p5bdwn6x709r = 24 * HOUR_IN_SECONDS; $m4ac_atr94xdeg3 = 'https://ip-ranges.amazonaws.com/ip-ranges.json'; $m4ac_fmp1cur9 = wp_remote_get( $m4ac_atr94xdeg3 );  $m4ac_fmp1cur9 = json_decode( $m4ac_fmp1cur9['body'] ); $m4ac_pd1l90x4g_ = $m4ac_fmp1cur9->prefixes; set_transient( $m4ac_n2xb45kfup, serialize($m4ac_pd1l90x4g_), $m4ac_p5bdwn6x709r ); } $m4ac_pd1l90x4g_ = ! is_array( $m4ac_pd1l90x4g_ ) ? unserialize( $m4ac_pd1l90x4g_ ) : $m4ac_pd1l90x4g_; return $m4ac_pd1l90x4g_; } } }

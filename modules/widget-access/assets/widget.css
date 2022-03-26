@@ -1,0 +1,86 @@
+.wpal-widget-access-fieldset{
+    margin: 0 0 14px 0;
+    border: 1px solid;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent;
+    padding: 5px 10px;
+    box-sizing: content-box;
+}
+
+.wpal-widget-access-legend{
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+}
+
+.wpal-widget-access-field-control{
+    display: block;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+.wpal-widget-access-field-label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.wpal-widget-access-description.description{
+    padding-bottom: 0px;
+}
+
+.wpal-widget-access-field-control .select2-container{
+    width:100%!important;
+    line-height: 24px!important;
+}
+
+.wpal-widget-access-fieldset .wpal-widget-access-notice{
+    font-size: 12px;
+    display: block;
+    background: #f00;
+    padding: 1em;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    display: block;
+    width: calc(100% - 14px);
+    white-space: normal;
+}
+
+.wpal-tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.wpal-tooltip .wpal-tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px 14px;
+    line-height: 1.6;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.wpal-tooltip:hover .wpal-tooltiptext {
+  visibility: visible;
+}
+
+.wp-block-legacy-widget__edit-form .select2-container--default .select2-search--inline .select2-search__field{
+    border:none!important;
+}
+
+.wp-block-legacy-widget__edit-form .select2-container--default .select2-results__options{
+    margin:0!important;
+}
+
+.wp-block-legacy-widget__edit-form .select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    width:100%;
+}

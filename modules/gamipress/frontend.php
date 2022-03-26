@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright (c) 2012-2021 David J Bullock
+ * Web Power and Light
+ */
+
+ if (class_exists('m4ac_c6rqypiacz4') ) { final 
+class m4ac_h2bfyivjs { 
+function m4ac_vwqa_govf() { $this->m4ac_v48sf2rwq0op(); } 
+function m4ac_v48sf2rwq0op() { add_shortcode('memb_gp_award_achievement', [$this, 'm4ac_if_gucaht0x']); add_shortcode('memb_gp_update_points', [$this, 'm4ac_m1tb9e40gd_5']); } 
+function m4ac_if_gucaht0x($m4ac_c1m92xtgl8z, string $m4ac_c4qc56391fd = '', string $m4ac_kp6zrjntmf78 = '') { $m4ac_wdl2r3x6jg = [ 'admin_id' => get_the_author_meta('ID'), 'id' => 0, 'only_once' => 1, 'trigger' => 'Memberium Shortcode', 'user_id' => get_current_user_id(), ]; if (isset($m4ac_c1m92xtgl8z[0]) && $m4ac_c1m92xtgl8z[0] == 'showatts') { return implode(',', array_keys($m4ac_wdl2r3x6jg) ); } $m4ac_ez3rgc7y0ek = [ 'gamipress_award_achievement_to_user', 'gamipress_has_user_earned_achievement', ]; foreach($m4ac_ez3rgc7y0ek as $m4ac_egl6dkai) { if (! function_exists($m4ac_egl6dkai) ) { return ''; } } $m4ac_c1m92xtgl8z = shortcode_atts($m4ac_wdl2r3x6jg, $m4ac_c1m92xtgl8z, 'memberium'); $m4ac_ya4km5wlsd = m4ac_audvsgbhpw::m4ac_nw4k98ogv($m4ac_c1m92xtgl8z['only_once'], true); if (! $m4ac_c1m92xtgl8z['user_id']) { return ''; } if ($m4ac_c1m92xtgl8z['only_once']) { if (gamipress_has_user_earned_achievement($m4ac_c1m92xtgl8z['id'], $m4ac_c1m92xtgl8z['user_id']) ) { return ''; } } $result = gamipress_award_achievement_to_user($m4ac_c1m92xtgl8z['id'], $m4ac_c1m92xtgl8z['user_id'], $m4ac_c1m92xtgl8z['admin_id'], $m4ac_c1m92xtgl8z['trigger']); } 
+function m4ac_m1tb9e40gd_5($m4ac_c1m92xtgl8z, string $m4ac_c4qc56391fd = '', string $m4ac_kp6zrjntmf78 = '') { $m4ac_wdl2r3x6jg = [ 'achievement_id' => 0, 'admin_id' => get_the_author_meta('ID'), 'log_type' => '', 'points_type' => '', 'points' => 0, 'reason' => '', 'user_id' => get_current_user_id(), ]; if (isset($m4ac_c1m92xtgl8z[0]) && $m4ac_c1m92xtgl8z[0] == 'showatts') { return implode(',', array_keys($m4ac_wdl2r3x6jg) ); } if (! function_exists('gamipress_update_user_points') ) { return ''; } $m4ac_c1m92xtgl8z = shortcode_atts($m4ac_wdl2r3x6jg, $m4ac_c1m92xtgl8z, 'memberium'); if (! $m4ac_c1m92xtgl8z['user_id']) { return ''; } $m4ac_c1m92xtgl8z['points'] = $m4ac_c1m92xtgl8z['points'] + gamipress_get_user_points($m4ac_c1m92xtgl8z['user_id'], $m4ac_c1m92xtgl8z['points_type']); gamipress_update_user_points($m4ac_c1m92xtgl8z['user_id'], $m4ac_c1m92xtgl8z['points'], $m4ac_c1m92xtgl8z['admin_id'], $m4ac_c1m92xtgl8z['achievement_id'], $m4ac_c1m92xtgl8z['points_type'], $m4ac_c1m92xtgl8z['reason'], $m4ac_c1m92xtgl8z['log_type']); } private 
+function __construct() { add_action('init', [$this, 'm4ac_vwqa_govf']); } static 
+function m4ac_zw_dhmca() : self { static $m4ac_u4tpxcro19 = false; return $m4ac_u4tpxcro19 ? $m4ac_u4tpxcro19 : $m4ac_u4tpxcro19 = new self; }  } }

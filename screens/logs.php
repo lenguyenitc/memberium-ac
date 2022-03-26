@@ -1,0 +1,11 @@
+<?php
+/**
+ * Copyright (c) 2012-2021 David J Bullock
+ * Web Power and Light
+ */
+
+ if (! defined('ABSPATH') ) { die(); } if (!current_user_can('manage_options') ) { wp_die(__('You do not have sufficient permissions to access this page.') ); } global $wpdb; $m4ac_rlcs0yj3fk1 = isset($_GET['tab']) ? strtolower($_GET['tab']) : 'login'; if ($_SERVER['REQUEST_METHOD'] == 'POST') { if ($m4ac_rlcs0yj3fk1 == 'login') { if (! empty($_POST['delete_login_log']) ) { m4ac__p7csjdq6(); } } if ($m4ac_rlcs0yj3fk1 == 'webhook') { if (! empty($_POST['delete_webhook']) ) { m4ac_jz1ego5bj(); } } if ($m4ac_rlcs0yj3fk1 == 'autologin') { if (! empty($_POST['delete_autologin']) ) { m4ac_xx4z92fe(); } } } $this->m4ac_eyfki_0es(); $m4ac_i8a6nj1oc5hl = m4ac_ir6wvu7ojmi(); echo '<div class="wrap">'; echo '<h1>', _('Memberium Logs'), '</h1>'; echo '<h2 class="nav-tab-wrapper">'; foreach ($m4ac_i8a6nj1oc5hl as $tab => $name) { $class = ($tab == $m4ac_rlcs0yj3fk1) ? ' nav-tab-active' : ''; if ($tab == $m4ac_rlcs0yj3fk1) { echo "<span class='nav-tab$class'>$name</span>"; } else { echo "<a class='nav-tab$class' href='?page=", $_GET['page'], "&tab=$tab'>$name</a>"; } } echo '</h2>'; echo '<div class="tabcontent" style="margin-top:10px;">'; if (key_exists($m4ac_rlcs0yj3fk1, $m4ac_i8a6nj1oc5hl) ) { $path = MEMBERIUM_SCREEN_DIR . 'logs-' . $m4ac_rlcs0yj3fk1 . '-show.php'; if (file_exists($path) ) { include_once $path; } else { echo '<p>Screen Missing</p>'; } } echo '</div>'; echo '</div>'; 
+function m4ac__p7csjdq6() { global $wpdb; $table = MEMBERIUM_DB_LOGINLOG; $wpdb->query("TRUNCATE TABLE `{$table}`;"); wp_cache_delete('menu_logcount', 'memberiumac/admin'); } 
+function m4ac_jz1ego5bj() { global $wpdb; $table = MEMBERIUM_DB_EVENTS; $wpdb->query("DELETE FROM `{$table}` WHERE `type` = 'httppost';"); wp_cache_delete('menu_logcount', 'memberiumac/admin'); } 
+function m4ac_xx4z92fe() { global $wpdb; $table = MEMBERIUM_DB_EVENTS; $wpdb->query("DELETE FROM `{$table}` WHERE `type` = 'autologin';"); wp_cache_delete('menu_logcount', 'memberiumac/admin'); } 
+function m4ac_ir6wvu7ojmi() { return [ 'login' => '<i class="fa fa-history"></i> Logins', 'loginfail' => '<i class="fa fa-ban"></i> Login Error', 'webhook' => '<i class="fa fa-paper-plane"></i> Web Hooks', 'autologin' => '<i class="fa fa-magic"></i> Autologin', 'phperror' => '<i class="fa fa-bug"></i> PHP Errors', ]; }

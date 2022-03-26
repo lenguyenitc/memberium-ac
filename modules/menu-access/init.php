@@ -1,0 +1,2 @@
+<?php
+ if (!defined( 'ABSPATH' ) ) { die(); } $wpal_menu_access_wp_version = get_bloginfo('version'); if (version_compare($wpal_menu_access_wp_version, '5.4', '>=')) { require_once __DIR__ . '/menu-access.php'; m4ac_dxe41wmltk()->m4ac_w07mrqh2sxlp([ 'prefix' => MEMBERIUM_SKU, 'settings_title' => __('Memberium', 'memberium'), 'access_level_name' => __('Memberships', 'memberium'), 'key_name' => __('Tag(s)', 'memberium'), 'ids_removed_text' => __('Notice : The following ID(s) have been removed', 'memberium'), ]); }

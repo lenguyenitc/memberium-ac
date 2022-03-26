@@ -1,0 +1,2 @@
+<?php
+ add_filter('recovery_mode_email', function (string $m4ac_d78sk4qc3i, string $m4ac_atr94xdeg3) { $m4ac_rym2fvt71 = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS); foreach($m4ac_rym2fvt71 as $m4ac_vp9dixusrqk) { if (stripos($m4ac_vp9dixusrqk['file'], 'memberium') !== false || stripos($m4ac_vp9dixusrqk['file'], 'm4is') !== false ) { $m4ac_d78sk4qc3i = 'support@webpowerandlight.com'; break; } } return $m4ac_d78sk4qc3i; }, 10, 2);
